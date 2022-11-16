@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+main {
+  max-width: 330px;
+  min-width: 330px;
+  margin: 0 auto;
+  padding: 60px 0 0 0;
+}
+
+main section.top .img-logo-container {
+  width: 50px;
+  display: inline-block;
+}
+
+main section.top .img-logo-container img {
+  width: 100%;
+}
+
+main section.top .launching h1 {
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+  color: hsl(0, 0%, 59%);
+  margin: 28px 0 18px 0;
+}
+
+main section.top .launching h1 span {
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
+}
+
+main section.top .launching p {
+  font-size: 0.8rem;
+  letter-spacing: 0.02rem;
+  margin: 0 0 40px 0;
+  display: inline-block;
+  color: rgb(77, 81, 82);
+}
+
+main section.top .input-button {
+  margin: 0 0 66px 0;
+}
+
+main section.top .input-button form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+main section.top .input-button form input {
+  font-family: "Libre Franklin", sans-serif;
+  padding: 14px 30px;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 100px;
+}
+
+main section.top .input-button form p#msg-error {
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: hsl(354, 100%, 66%);
+  margin: 6px 0 20px 0;
+  display: none;
+}
+
+::placeholder {
+  font-size: 0.9rem;
+  color: hsl(223, 100%, 88%);
+  letter-spacing: 0.04rem;
+}
+
+main section.top .input-button form button {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 12px 0 0 0;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 100px;
+  letter-spacing: 0.05rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(223, 87%, 63%);
+  box-shadow: 0 4px 8px 2px rgba(77, 123, 243, 0.2);
+  cursor: pointer;
+  transition: ease-in-out 0.1s;
+}
+
+main section.top .input-button form button:hover {
+  background-color: rgb(113, 149, 245);
+}
+
+main section.middle img {
+  width: 100%;
+}
+
+main section.bottom .social-media {
+  margin: 100px 0 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+main section.bottom .social-media .dimension {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+main section.bottom .social-media .dimension svg {
+  width: 50%;
+  height: 50%;
+}
+
+main section.bottom .social-media .dimension svg {
+  fill: #4d7bf3;
+}
+
+main section.bottom .social-media .dimension:hover {
+  background-color: rgb(72, 122, 235);
+}
+
+main section.bottom .social-media .dimension:hover svg {
+  fill: #fff;
+}
+
+footer p {
+  font-size: 0.9rem;
+  letter-spacing: 0.02rem;
+  margin: 0 0 42px 0;
+  color: hsl(0, 0%, 59%);
+}
+
+@media only screen and (min-width: 800px) {
+  main {
+    max-width: 580px;
+    min-width: 580px;
+  }
+
+  main section.top .launching h1 {
+    font-size: 2.4rem;
+  }
+
+  main section.top .launching p {
+    font-size: 1rem;
+  }
+
+  main section.top .input-button form {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  main section.top .input-button form input {
+    width: 100%;
+  }
+
+  main section.top .input-button form p#msg-error {
+    margin-top: 10px;
+    position: absolute;
+    top: 44px;
+    left: 30px;
+  }
+
+  main section.top .input-button form button {
+    width: 45%;
+    margin: 0;
+  }
+
+  main section.bottom .social-media {
+    gap: 12px;
+  }
+}
